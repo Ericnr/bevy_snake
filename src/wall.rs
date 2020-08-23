@@ -1,7 +1,6 @@
 use crate::collision::Collision;
 use bevy::prelude::*;
 
-// use bevy::prelude::{Sprite, SpriteComponent, Translation, Vec2, Vec3};
 pub struct WallsPlugin;
 
 pub struct Wall;
@@ -13,9 +12,7 @@ impl Plugin for WallsPlugin {
 }
 
 fn setup_walls(mut commands: Commands, mut materials: ResMut<Assets<ColorMaterial>>) {
-    // make_wall(&mut commands, &mut materials, Vec3::new(0.0, 40.0, 0.0));
     commands.spawn(Camera2dComponents::default());
-    // .spawn(UiCameraComponents::default());
 
     let wall_thickness = 20.0;
 
